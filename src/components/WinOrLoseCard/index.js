@@ -15,7 +15,7 @@ const WinOrLoseCard = props => {
     <div className="win-lose-card">
       <div className="text-container">
         <h1 className="result">{resultText}</h1>
-        <p className="label">Score</p>
+        <p>{isWon ? 'Best Score' : 'Score'}</p>
         <p className="final-score">
           {score}/{totalEmojis}
         </p>
