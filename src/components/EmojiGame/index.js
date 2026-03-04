@@ -87,7 +87,9 @@ class EmojiGame extends Component {
 
     return (
       <div className="emoji-game-container">
-        <NavBar score={score} topScore={topScore} />
+      
+        {!isGameOver && <NavBar score={score} topScore={topScore} />}
+        
         {isGameOver ? (
           <WinOrLoseCard
             score={score}
