@@ -27,7 +27,7 @@ class EmojiGame extends Component {
 
   shuffledEmojisList = () => {
     const {emojisList} = this.props
-    return [...emojisList].sort(() => Math.random() - 0.5)
+    return emojisList.sort(() => Math.random() - 0.5)
   }
 
   onClickEmoji = id => {
